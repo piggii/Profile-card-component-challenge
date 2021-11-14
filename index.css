@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-img-top {
+    width: 50%;
+    position: absolute;
+    top: -550px;
+    left: -240px;
+}
+
+.bg-img-bottom {
+    width: 50%;
+    position: absolute;
+    bottom: -620px;
+    right: 20px;
+}
+
+.card-component {
+    position: absolute;
+    border: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 50px #666;
+}
+
+.card-header {
+    display: flex;
+}
+
+.profile-img {
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.image {
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.card-content {
+    position: relative;
+    background-color: #fff;
+    padding: 70px 60px 30px 60px;
+    border-bottom: .5px solid  hsl(227, 10%, 46%);
+}
+
+.card-footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.font-l {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.font-m {
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.font-s {
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.font-xs {
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 375px) {
+    .card-component {
+        width: 85%;
+    }
+
+    .bg-img-top {
+        position: absolute;
+        top: -700px;
+        left: -720px;
+    }
+    
+    .bg-img-bottom {
+        position: absolute;
+        bottom: -690px;
+        right: 50px;
+    }
+}
